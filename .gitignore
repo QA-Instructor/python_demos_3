@@ -1,2 +1,9 @@
 .idea/
 venv
+capitals.*
+log.txt
+spam.txt
+sample_files/logfile.txt
+sample_files/myfile.txt
+sample_files/out.dat
+capitals_compressed.pgz

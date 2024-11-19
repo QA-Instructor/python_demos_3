@@ -3,7 +3,7 @@ nb = fo.write(b'Single bytes string\n')
 s = "Native string as a line\r\n"
 nb = fo.write(s.encode())
 print(nb)
-# best practice - close the file soother processes can read it
+# best practice - close the file so other processes can read it
 fo.close()
 
 

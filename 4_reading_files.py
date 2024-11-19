@@ -1,11 +1,14 @@
 lyrics = open('sample_files/ShakeItOff.txt', 'r')
 
+# read 10 characters
 buffer = lyrics.read(10)
 print(buffer)
 
+# read 20 characters
 buffer = lyrics.read(20)
 print(buffer)
 
+# read a line. The \n character is included
 lyric_line = lyrics.readline()
 print(lyric_line)
 
@@ -14,11 +17,12 @@ print(next_line)
 
 for line in range(5):
     next_line = lyrics.readline()
-    # print(line, next_line, end='')
-    print(line, next_line[:-1])
+    print(line, next_line, end='')
+    # print(line, next_line[:-1])
+    # print(line, next_line)
 
 print("#" * 25, "SLURPING 1 ", "#" * 25)
-# slurping 1
+# slurping 1 (reads entire file in one gulp)
 # lines = open('brian.txt').read()
 song = open('sample_files/ShakeItOff.txt', 'r').read()
 print(f"Whole song:\n{song}")
